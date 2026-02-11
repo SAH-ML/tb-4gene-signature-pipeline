@@ -201,6 +201,35 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# ================================
+# TB 4‑Gene Pipeline Specific Rules
+# ================================
+
+# Raw GEO data (DO NOT COMMIT)
+data/*.gz
+data/*.txt
+data/*.soft
+data/*.csv
+!data/.gitkeep
+
+# Generated results (CSV, TXT)
+results/*.csv
+results/*.txt
+!results/.gitkeep
+
+# Generated figures
+figures/*.png
+figures/*.pdf
+figures/*.svg
+!figures/.gitkeep
+
+# Trained models (binary)
+models/*.pkl
+models/*.joblib
+!models/.gitkeep
+
+# Log files
+*.log
 # Marimo
 marimo/_static/
 marimo/_lsp/
